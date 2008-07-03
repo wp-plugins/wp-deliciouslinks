@@ -1,7 +1,7 @@
 <?php
 /*
 Plugin Name: WP_DeliciousLinkSync
-Plugin URI: http://www.dcoda.co.uk/index.php/downloads/wordpress/wp_deliciouslinks/
+Plugin URI: http://www.dcoda.co.uk/index.php/tag/wp_deliciouslinksync/
 Description: Synchronise You WordPress Links with you delicous links.
 Author: DCoda Ltd
 Author URI: http://www.dcoda.co.uk
