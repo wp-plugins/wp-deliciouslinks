@@ -12,7 +12,7 @@ class dc_deliciouslinks_1_0_0 extends dc_base_2_4_0 {
 	function dash()
 	{
 		$d = $this->loadClass('wp_dashboard',array($this,'dash'));
-		$d->add_page('Manage','DeleciousLinkSync',array($this,'page'));
+		$d->add_page('Manage','DeliciousLinkSync',array($this,'page'));
 	}
 	function page()
 	{
