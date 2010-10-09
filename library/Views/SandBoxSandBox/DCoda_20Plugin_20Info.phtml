@@ -1,0 +1,70 @@
+<?php
+/**
+ * html output to display info about dcoda plugins installed
+ * @package Library
+ * @subpackage Plugin Info
+ * @copyright DCoda Ltd
+ * @author DCoda Ltd
+ * @license http://www.gnu.org/licenses/gpl.txt
+ * $HeadURL$
+ * $LastChangedDate$
+ * $LastChangedRevision$
+ * $LastChangedBy$
+ */
+?>
+<table>
+	<thead>
+		<tr>
+			<th align=left>Name</th>
+			<th align=left width=100px>Version</th>
+			<th align=left width=100px>Stable Version</th>
+			<th align=left width=100px>Revision</th>
+			<th align=left width=100px>Active</th>
+			<th align=left>Path</th>
+		</tr>
+	</thead>
+	<tbody>
+	<?php
+	foreach($this->plugins as $plugin):
+	?>
+		<tr>
+			<td><?php echo $plugin['info']->name()?></td>
+			<td><?php echo $plugin['info']->version()?></td>
+			<td><?php echo $plugin['readme']->stabletag()?></td>
+			<td><?php echo $plugin['svn']->lastchangedrevision()?></td>
+			<td><?php if(in_array($plugin['info']->filename(),$this->filenames))
+			{
+				if($plugin['info']->filename()==$this->application()->filename())
+				{
+					echo "Controlling";
+				}
+				else
+				{
+					echo "Yes";
+				}
+			}
+			?></td>
+			<td><?php echo $plugin['info']->filename()?></td>
+		</tr>
+		<?php
+		endforeach;
+		?>
+	</tbody>
+</table>
+<form action="" method="post"><input name=submit type=submit
+	value="Change version minor to reflect Revision" /></form>
+<h2>Include Paths</h2>
+		<?php
+		foreach($this->application()->applications() as $plugin)
+		{
+			echo "<b>".$plugin->name()."</b>"."<br>";
+			foreach($plugin->loader()->includepath() as $path)
+			{
+				echo $path."<br>";
+			}
+			echo "<br>";
+		}
+		?>
+
+
+

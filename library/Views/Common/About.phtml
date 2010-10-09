@@ -1,0 +1,57 @@
+<?php
+/**
+ * A coomon about page for all apps showing info about the plugins gleaned form the readme.txt and other places
+ * @package Library
+ * @subpackage About
+ * @copyright DCoda Ltd
+ * @author DCoda Ltd
+ * @license http://www.gnu.org/licenses/gpl.txt
+ * $HeadURL$
+ * $LastChangedDate$
+ * $LastChangedRevision$
+ * $LastChangedBy$
+ */
+?>
+</pre>
+<table>
+	<tr>
+		<td valign='top'><?php foreach($this->project_readme['readme']['content'] as $key=>$value): ?>
+		<div class="postbox ">
+		<h3><?php echo ucwords($key)?></h3>
+		<div class="inside">
+		<?php if(is_array($value)):
+			foreach($value as $title=>$text):?>
+		<strong><?php echo $title; ?></strong>
+		<?php echo Markdown($text); ?>
+		<?php endforeach;else:?>
+		<?php echo Markdown($value); ?>
+		<?php endif;?>
+		</div>
+		</div>
+		<?php endforeach; ?></td>
+		<td valign=top width=200px>
+		<div class="postbox">
+		<h3>Plugin Info</h3>
+		<div class="inside">
+		<p>Version: <?php echo $this->project_plugin['tags']['Version']; ?></p>
+		<p>Released Version: <?php echo $this->project_readme['tags']['Stable tag']; ?></p>
+		<p>Tested on WordPress : <?php echo $this->project_readme['tags']['Requires at least'].' - '.$this->project_readme['tags']['Tested up to']; ?></p>
+		<p>Author: <a href='<?php echo $this->project_plugin['tags']['Author URI']; ?>'><?php echo $this->project_plugin['tags']['Author']; ?>
+		&#187;</a></p>
+		<?php if(false){?>
+		<p>License: <?php echo $this->readme->license(); ?></p>
+		<p>Commissioned By: <?php echo ""; ?></p>
+		<?php //} else { ?>
+		<p>Commissioned By: <a
+			href="<?php echo $this->readme->commissionedbyurl(); ?>"><?php echo $this->readme->commissionedby(); ?></a></p>
+			<?php }?> <?php if(array_key_exists('Plugin URI',$this->project_plugin['tags'])): ?>
+		<p><a href='<?php echo $this->project_plugin['tags']['Plugin URI']; ?>'>Plugin Homepage &#187;</a></p>
+		<?php endif; ?> <?php if($this->project_readme['tags']['Donate link']): ?>
+		<p><a href="<?php echo $this->project_readme['tags']['Donate link']; ?>">Dontate to
+		this plugin &#187;</a></p>
+		<?php endif; ?></div>
+		</div>
+	</tr>
+</table>
+
+

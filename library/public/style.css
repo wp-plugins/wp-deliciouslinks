@@ -1,0 +1,46 @@
+/**
+ * styles common accross all packages
+ * @package Library
+ * @subpackage style.css
+ * @copyright DCoda Ltd
+ * @author DCoda Ltd
+ * @license http://www.gnu.org/licenses/gpl.txt
+ * $HeadURL$
+ * $LastChangedDate$
+ * $LastChangedRevision$
+ * $LastChangedBy$
+ */
+.D5vStyle .err {
+	background-color: #FFEEEB;
+	border: 1px solid #D41700;
+	padding: 5px;
+	margin: 0px;
+}
+
+.D5vStyle div {
+	padding: 0;
+}
+
+.D5vStyle .postbox {
+	
+}
+
+.D5vStyle h3 {
+	margin: 0;
+	padding: 5px;
+}
+
+.D5vStyle .inside {
+	padding: 5px;
+}
+
+.D5vStyle .inside ul {
+	margin-left: 10px;
+	list-style-type: circle;
+	list-style-position: inside;
+}
+
+.D5vStyle .inside ol {
+	margin-left: 10px;
+	list-style-position: inside;
+}
