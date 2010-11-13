@@ -10,6 +10,6 @@ class SettingsDeliciousLinkSyncController extends w3v_Controller_Action_AdminMen
 		{
 			$dataObj->synclinks($this->view->data ['id'],$this->view->data ['password']);
 		}
-		return $content;
+		return $content.$this->updated();
 	}
 }

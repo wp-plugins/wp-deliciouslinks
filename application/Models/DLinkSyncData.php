@@ -1,8 +1,16 @@
 <?php
-class DLinkSyncData extends b3v_Base {
-	
-	private function key() {
-		return 'DLinkSync';
+class DLinkSyncData extends w3v_Table_Options {
+	public function defaults() {
+		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
+	}
+	public function __construct() {
+		parent::__construct ();
+		$this->set_key ( array ('delicious_linksync' ) );
+		if (is_array ( get_option ( 'DLinkSync' ) )) {
+			
+			$this->set ( get_option ( 'DLinkSync' ) );
+			delete_option ( 'DLinkSync' );
+		}
 	}
 	public function update() {
 		$values = $this->get ();
@@ -13,50 +21,8 @@ class DLinkSyncData extends b3v_Base {
 		}
 		return $values;
 	}
-	
-	public function post() {
-		if ($_SERVER ['REQUEST_METHOD'] == 'POST') {
-			$this->set ( $_POST );
-		}
-		return $this->get ();
-	}
-	
-	public function set($values) {
-		if ($this->global) {
-			$data = new w3v_Table_SiteMeta ( );
-		} else {
-			$data = new w3v_Table_Options ( );
-		}
-		$values ['last_updated'] = time ();
-		$data->set ( $this->key (), $values );
-		return $this->get ();
-	}
-	
-	public function defaults() {
-		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
-	}
-	
-	public function get() {
-		if ($this->global) {
-			$data = new w3v_Table_SiteMeta ( );
-			$settings = $data->get ( $this->key () );
-		} else {
-			$data = new w3v_Table_Options ( );
-			$settings = $data->get ( $this->key () );
-		}
-		if (! is_array ( $settings )) {
-			$settings = $this->defaults ();
-		}
-		return $settings;
-	}
-	
-	public function __construct($global = false) {
-		$this->global = $global;
-		parent::__construct ();
-	}
-	
 	public function synclinks($id, $password) {
-		$delObj = new fv1_Delicious ( );
+		$delObj = new f1v_Delicious ( );
 		$delObj->logonBasic ( $id, $password );
 		$links = $delObj->get_all_posts ( 'Sync' );
 		$newlinks = array ();
@@ -120,4 +86,9 @@ class DLinkSyncData extends b3v_Base {
 			}
 		}
 	}
+	public function prepare_value($values) {
+		$values ['last_updated'] = time ();
+		return $values;
+	}
+	
 }

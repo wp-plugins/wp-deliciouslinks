@@ -47,7 +47,8 @@ The settings screen contain inbuilt help boxes however you can post support your
 
 = 4.0.0 =
 
-
++ reverted to pre-reboot version numbers.
++ updated options screens to use new library routines.
 
 = 1.1.15.d6v =
 
@@ -64,7 +65,7 @@ The settings screen contain inbuilt help boxes however you can post support your
 
 == Upgrade Notice ==
 
-= 4.0.0 =
+
 
 
 == Copyright ==
