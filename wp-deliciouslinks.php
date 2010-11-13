@@ -17,29 +17,10 @@
  * $LastChangedRevision$
  * $LastChangedBy$
  */
-$lib = dirname ( __FILE__ ) . '/library/d6vCode/WP/Plugin.php';
-/**
- * check to see if plugin is run from project folder or from parent folder IE as mu plugin.
- */
-if (!file_exists ( $lib ))
-{
-	require_once dirname( __FILE__ ) . '/'.basename(__FILE__,'.php').'/'.basename(__FILE__);
-}
-else
-{
+$lib = dirname ( __FILE__ ) . '/library/wordpress/w3v/Application.php';
+if (! file_exists ( $lib )) {
+	require_once dirname ( __FILE__ ) . '/' . basename ( __FILE__, '.php' ) . '/' . basename ( __FILE__ );
+} else {
 	require_once $lib;
-	class DeliciousLinkSync extends d6vCode_WP_Plugin
-	{
-
-		public function __construct ( $filename )
-		{
-			$this->set_name ( "DeliciousLinkSync" );
-			parent::__construct ( $filename );
-		}
-		public function preload_classes ( $classes = array() )
-		{
-			parent::preload_classes ( array('DLinkSyncData','d6vCode_Http','d6vCode_Http_Delicious') );
-		}
-	}
-	new DeliciousLinkSync ( __FILE__ );
+	new w3v_Application ( __FILE__,array() );
 }

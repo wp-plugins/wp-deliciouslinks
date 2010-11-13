@@ -41,18 +41,6 @@ Delicious tags are different to WordPress categories in that they are lower case
 
 == Changelog ==
 
-= 1.1.15.d6v =
-
-+ update base library.
-
-= 1.0.12.D5v =
-
-+ Pull delicious links
-+ Select links tagged sync
-+ Delete local links categorized Sync that do not appear.
-+ Update local links categorized Sync that appear.
-+ Insert local links if they do not appear.
-+ Update on page views
 
 == Copyright ==
 
