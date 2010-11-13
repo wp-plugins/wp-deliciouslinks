@@ -1,17 +1,5 @@
 <?php
-/**
- * adds admin pages for censor under the plugin option
- * @package RSSSticky
- * @subpackage PluginsRSSInjectionController
- * @copyright DCoda Ltd
- * @author DCoda Ltd
- * @license http://www.gnu.org/licenses/gpl.txt
- * $HeadURL$
- * $LastChangedDate$
- * $LastChangedRevision$
- * $LastChangedBy$
- */
-class SettingsDeliciousLinkSyncController extends d6vCode_Controller_Action_WP_AdminMenu
+class SettingsDeliciousLinkSyncController extends w3v_Controller_Action_AdminMenu
 {
 
 	public function SettingsAction ( $content )
