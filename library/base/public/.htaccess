@@ -1,0 +1,14 @@
+##
+# Turn of anti snooping for this folder for files that exist
+# @package Library
+# @subpackage .htaccess
+# @copyright DCoda Ltd
+# @author DCoda Ltd
+# @license http://www.gnu.org/licenses/gpl.txt
+# $HeadURL: svn+ssh://amber.local/svn/library/library/trunk/public/.htaccess $
+# $LastChangedDate: 2010-10-19 16:31:54 +0100 (Tue, 19 Oct 2010) $
+# $LastChangedRevision: 77 $
+# $LastChangedBy: damianmanifold $RewriteEngine On
+##
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule . - [L]
