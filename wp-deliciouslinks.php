@@ -12,6 +12,7 @@ if (! file_exists ( $lib )) {
 } else {
 	require_once $lib;
 
-
+	@include_once (ABSPATH .  '/wp-admin/includes/bookmark.php');
+	
 	new w3v_Application ( __FILE__,array('DLinkSyncData','b3v_Http','f1v_Delicious') );
 }
