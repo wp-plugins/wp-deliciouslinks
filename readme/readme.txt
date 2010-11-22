@@ -25,10 +25,11 @@ If you require a a custom plugin you can contact us <a href="http://dcoda.co.uk/
 
 == Installation ==
 
-1. Copy the plugin folder to `wp-content/plugins`
-2. Log in to WordPress as an administrator.
-3. Enable the plugin in the `Plugins` admin screen.
-4. Visit the admin page `Plugins->Settings->DeliciousLinkSync to configure and get further help.
+1. Disable and delete any old versions of the plugin.
+2. Copy the plugin folder to `wp-content/plugins`
+3. Log in to WordPress as an administrator.
+4. Enable the plugin in the `Plugins` admin screen.
+5. Visit the admin page `Plugins->Settings->DeliciousLinkSync to configure and get further help.
 5. Set delicious account details setting page.
 6. Indicate which links you wish to sync in delicious by tagging them as `sync`
 
