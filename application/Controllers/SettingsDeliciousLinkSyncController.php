@@ -1,5 +1,5 @@
 <?php
-class SettingsDeliciousLinkSyncController extends w3v_Controller_Action_AdminMenu
+class SettingsDeliciousLinkSyncController extends w6v_Controller_Action_AdminMenu
 {
 
 	public function SettingsAction ( $content )

@@ -6,7 +6,7 @@ Author: dcoda
 Author URI: http://dcoda.co.uk
 Version: 4.0.1
  */ 
-$lib = dirname ( __FILE__ ) . '/library/wordpress/w3v/Application.php';
+$lib = dirname ( __FILE__ ) . '/library/wordpress/w6v/Application.php';
 if (! file_exists ( $lib )) {
 	require_once dirname ( __FILE__ ) . '/' . basename ( __FILE__, '.php' ) . '/' . basename ( __FILE__ );
 } else {
@@ -14,5 +14,5 @@ if (! file_exists ( $lib )) {
 
 	@include_once (ABSPATH .  '/wp-admin/includes/bookmark.php');
 	
-	new w3v_Application ( __FILE__,array('DLinkSyncData','b3v_Http','f1v_Delicious') );
+	new w6v_Application ( __FILE__,array('DLinkSyncData','b6v_Http','f2v_Delicious') );
 }
