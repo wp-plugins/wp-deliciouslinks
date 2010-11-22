@@ -1,5 +1,5 @@
 <?php
-class DLinkSyncFiltersController extends w6v_Controller_Action_Filter
+class DLinkSyncFiltersController extends w7v_Controller_Action_Filter
 {
 }
 		
