@@ -3,7 +3,7 @@ Contributors: dcoda
 Donate link: http://wordpress.dcoda.co.uk/donate/deliciouslinksync/
 Tags:  central,  links,  sync, delicious, php5.2
 Requires at least: 3.0.0
-Tested up to: 3.0.1
+Tested up to: 3.0.2
 Stable tag: 4.0.1
 
 Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.
