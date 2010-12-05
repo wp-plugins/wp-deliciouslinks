@@ -12,7 +12,8 @@ Easily synchronize the links list on your blog or multiple blogs with the links 
 
 This plugin is only supported on PHP 5.2 or greater.
 
-DeliciousLinkSync allows you to easily synchronise the links list on your blog or multiple blogs with your delicious account. Making it easier to maintain and organise your links.
+DeliciousLinkSync allows you to easily synchronise the links list on your blog or multiple blogs with your delicious account.
+ Making it easier to maintain and organise your links.
 If you are having trouble and cannot find the answers in the inbuilt help or in the <a href="http://wordpress.org/extend/plugins/wp-deliciouspost/faq/">FAQ</a> you can post your support questions <a href = "http://wordpress.org/tags/wp-deliciouspost">here</a>
 
 If you find DeliciousLinkSync useful please rate it at <a href="http://wordpress.org/extend/plugins/wp-deliciouslinks/">wordpress.org</a> and please consider making a <a href="http://wordpress.dcoda.co.uk/donate/deliciouslinksync/">donation</a> to help us set aside more hours to maintain DeliciousLinkSync 
