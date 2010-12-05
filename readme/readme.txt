@@ -48,6 +48,10 @@ The settings screen contain inbuilt help boxes however you can post support your
 2. Sample imported links
 == Changelog ==
 
+= 4.0.2 =
+
++ updated base library
+
 = 4.0.0 =
 
 + reverted to pre-reboot version numbers.
