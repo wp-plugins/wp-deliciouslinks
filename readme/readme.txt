@@ -22,7 +22,7 @@ DeliciousLinkSync is written by <a href='http://dcoda.co.uk'>dcoda</a>
 
 You can check out our other plugins <a href="http://profiles.wordpress.org/users/dcoda/">here</a>
 
-If you require a a custom plugin you can contact us <a href="http://dcoda.co.uk/contact/">here</a> and maybe we could write it for you.
+If you require a custom plugin you can contact us <a href="http://dcoda.co.uk/contact/">here</a> and maybe we could write it for you.
 
 == Installation ==
 
