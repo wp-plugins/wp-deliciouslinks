@@ -4,7 +4,7 @@ Plugin URI: http://wordpress.org/extend/plugins/wp-deliciouslinks/
 Description: Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.
 Author: dcoda
 Author URI: http://dcoda.co.uk
-Version: 4.0.2
+Version: 4.0.3
  */ 
 $lib = dirname ( __FILE__ ) . '/library/wordpress/w8v/Application.php';
 if (! file_exists ( $lib )) {
