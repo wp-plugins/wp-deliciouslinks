@@ -1,5 +1,5 @@
 <?php header("Content-type: text/css"); ?>
-div.s7v_<?php echo $_GET['t']?>
+div.s6v_<?php echo $_GET['t']?>
 {
 	border:none;
 	padding:0;
