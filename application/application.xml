@@ -14,6 +14,6 @@
 	<stable_tag>4.0.3</stable_tag>
 	<uri>http://wordpress.org/extend/plugins/wp-deliciouslinks/</uri>
 	<preload>DLinkSyncData</preload>
-	<preload>f2v_Delicious</preload>
-	<preload>b14v_Http</preload>
+	<preload>fv15v_Delicious</preload>
+	<preload>bv15v_Http</preload>
 	<include>ABSPATH .  '/wp-admin/includes/bookmark.php'</include></settings>

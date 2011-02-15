@@ -1,4 +1,4 @@
 <?php
-class SandBoxDeliciousLinkSyncController extends w14v_Controller_Action_AdminMenu {
+class SandBoxDeliciousLinkSyncController extends wv15v_Controller_Action_AdminMenu {
 }
 		
