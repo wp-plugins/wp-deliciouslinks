@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-	<name>ExportReaders</name>
-	<donate_link>http://wordpress.dcoda.co.uk/donate/export-readers/</donate_link>
-	<version>1.1.0</version>
-	<short_desc>Selectively export all your reader details ( users & commenters )</short_desc>
-	<tags>comments</tags>
-	<tags>users</tags>
-	<tags>csv</tags>
-	<tags>export</tags>
-	
-	<wpslug>blogrollsync</wpslug>
-	<slug>blogrollsync</slug>
-	<stable_tag>1.0.2</stable_tag>
-	<uri>http://wordpress.org/extend/plugins/export-readers/</uri>
-	<preload>ExReComments</preload>
-	<preload>ExReUsers</preload>
-	<preload>ExReSettings</preload></settings>
+	<name>DeliciousLinkSync</name>
+	<donate_link>http://wordpress.dcoda.co.uk/donate/deliciouslinksync/</donate_link>
+	<version>4.1.0</version>
+	<short_desc>Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.</short_desc>
+	<tags>synchronize</tags>
+	<tags>delicious</tags>
+	<tags>central</tags>
+	<tags>links</tags>
+	<tags>sync</tags>
+	<wpslug>wp-deliciouspost</wpslug>
+	<slug>deliciouspost</slug>
+	<stable_tag>4.0.3</stable_tag>
+	<uri>http://wordpress.org/extend/plugins/wp-deliciouslinks/</uri>
+	<preload>DLinkSyncData</preload>
+	<preload>f2v_Delicious</preload>
+	<preload>b14v_Http</preload>
+	<include>ABSPATH .  '/wp-admin/includes/bookmark.php'</include></settings>
