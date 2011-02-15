@@ -1,5 +1,5 @@
 <?php
-class DLinkSyncData extends w8v_Table_Options {
+class DLinkSyncData extends w14v_Table_Options {
 	public function defaults() {
 		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
 	}
