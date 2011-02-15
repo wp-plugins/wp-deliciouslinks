@@ -5,7 +5,6 @@
 	<version>4.1.0</version>
 	<short_desc>Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.</short_desc>
 	<tags>synchronize</tags>
-	<tags>central</tags>
 	<tags>sync</tags>
 	<wpslug>wp-deliciouspost</wpslug>
 	<slug>deliciouspost</slug>
