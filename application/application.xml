@@ -5,9 +5,7 @@
 	<version>4.1.0</version>
 	<short_desc>Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.</short_desc>
 	<tags>synchronize</tags>
-	<tags>delicious</tags>
 	<tags>central</tags>
-	<tags>links</tags>
 	<tags>sync</tags>
 	<wpslug>wp-deliciouspost</wpslug>
 	<slug>deliciouspost</slug>
@@ -16,4 +14,5 @@
 	<preload>DLinkSyncData</preload>
 	<preload>fv15v_Delicious</preload>
 	<preload>bv15v_Http</preload>
-	<include>ABSPATH .  '/wp-admin/includes/bookmark.php'</include></settings>
+	<include>ABSPATH .  '/wp-admin/includes/bookmark.php'</include>
+	<xml>/library/feeds/delicious.xml</xml></settings>
