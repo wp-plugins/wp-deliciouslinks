@@ -1,7 +1,7 @@
 === DeliciousLinkSync ===
 Contributors: dcoda
 Donate link: http://wordpress.dcoda.co.uk/donate/deliciouslinksync/
-Tags: central, del.icio.us, delicious, delicious, links, links, php5.2, sync, synchronize
+Tags: central, del.icio.us, delicious, link, links, php5.2, sync, synchronize
 Requires at least: 3.0.0
 Tested up to: 3.1
 Stable tag: 4.0.3
