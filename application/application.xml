@@ -2,7 +2,7 @@
 <settings>
 	<name>DeliciousLinkSync</name>
 	<donate_link>http://wordpress.dcoda.co.uk/donate/deliciouslinksync/</donate_link>
-	<version>4.1.0</version>
+	<version>4.1.0a</version>
 	<short_desc>Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.</short_desc>
 	<tags>synchronize</tags>
 	<tags>sync</tags>
