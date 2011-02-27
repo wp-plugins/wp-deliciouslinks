@@ -1,17 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <settings>
-	<name>DeliciousLinkSync</name>
-	<donate_link>http://wordpress.dcoda.co.uk/donate/deliciouslinksync/</donate_link>
-	<version>4.1.0a</version>
-	<short_desc>Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.</short_desc>
-	<tags>synchronize</tags>
-	<tags>sync</tags>
-	<wpslug>wp-deliciouspost</wpslug>
-	<slug>deliciouspost</slug>
-	<stable_tag>4.0.3</stable_tag>
-	<uri>http://wordpress.org/extend/plugins/wp-deliciouslinks/</uri>
-	<preload>DLinkSyncData</preload>
-	<preload>fv15v_Delicious</preload>
-	<preload>bv15v_Http</preload>
-	<include>ABSPATH .  '/wp-admin/includes/bookmark.php'</include>
-	<xml>/library/feeds/delicious.xml</xml></settings>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	<application><name>DeliciousLinkSync</name><donate_link>http://wordpress.dcoda.co.uk/donate/deliciouslinksync/</donate_link><version>4.1.0a</version><short_desc>Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.</short_desc><tags>synchronize</tags><tags>sync</tags><wpslug>wp-deliciouspost</wpslug><slug>deliciouspost</slug><stable_tag>4.0.3</stable_tag><uri>http://wordpress.org/extend/plugins/wp-deliciouslinks/</uri><preload>DLinkSyncData</preload><preload>fv15v_Delicious</preload><preload>bv15v_Http</preload><include>ABSPATH .  '/wp-admin/includes/bookmark.php'</include><xml>/library/feeds/delicious.xml</xml></application></settings>
