@@ -1,5 +1,5 @@
 <?php
-class DLinkSyncActionsController extends wv15v_Controller_Action_Action
+class dlinksyncactionscontrollerp extends wv15v_Controller_Action_Action
 {
 
 	public function shutdownAction ()
