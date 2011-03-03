@@ -1,5 +1,5 @@
 <?php
-class dlinksyncdatap extends wv15v_Table_Options {
+class dlinksyncdata extends wv15v_Table_Options {
 	public function defaults() {
 		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
 	}

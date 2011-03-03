@@ -1,5 +1,5 @@
 <?php
-class settingsdeliciouslinksynccontrollerp extends wv15v_Controller_Action_AdminMenu
+class settingsdeliciouslinksynccontroller extends wv15v_Controller_Action_AdminMenu
 {
 
 	public function SettingsAction ( $content )
