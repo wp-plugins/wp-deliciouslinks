@@ -1,15 +1,10 @@
 <?php
-class dlinksyncactionscontroller extends wv15v_Controller_Action_Action
-{
-
-	public function shutdownAction ()
-	{
-		$dataObj = new DLinkSyncData ( );
+class dlinksyncactionscontroller extends wv15v_controller_action_action {
+	public function shutdownAction() {
+		$dataObj = new dLinksyncdata ( );
 		$data = $dataObj->get ();
-		if ($data ['id'] != '')
-		{
-			$dataObj->update();
+		if ($data ['id'] != '') {
+			$dataObj->update ();
 		}
 	}
 }
-		

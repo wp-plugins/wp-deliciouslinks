@@ -1,5 +1,4 @@
 <?php
-class dlinksyncfilterscontroller extends wv15v_Controller_Action_Filter
-{
+class dlinksyncfilterscontroller extends wv15v_controller_action_filter {
 }
 		

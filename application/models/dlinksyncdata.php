@@ -1,5 +1,5 @@
 <?php
-class dlinksyncdata extends wv15v_Table_Options {
+class dlinksyncdata extends wv15v_table_options {
 	public function defaults() {
 		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
 	}
@@ -15,7 +15,7 @@ class dlinksyncdata extends wv15v_Table_Options {
 	public function update() {
 		$values = $this->get ();
 		if ($values ['between'] != '' && (time () - $values ['last_updated']) / (60 * 60 * 24) >= $values ['between']) //if ($values['between'] !='' && (time()-$values['last_updated'])/(1)>=$values['between'])
-		{
+{
 			$this->synclinks ( $values ['id'], $values ['password'] );
 			$values = $this->set ( $values );
 		}
@@ -90,5 +90,5 @@ class dlinksyncdata extends wv15v_Table_Options {
 		$values ['last_updated'] = time ();
 		return $values;
 	}
-	
+
 }
