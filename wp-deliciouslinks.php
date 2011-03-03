@@ -5,8 +5,8 @@ Description: Easily synchronize the links list on your blog or multiple blogs wi
 Author: dcoda
 Author URI: http://dcoda.co.uk
 Version: 4.1.0&alpha;
- */ 
-require_once  dirname ( __FILE__ ) . '/library/wordpress/wv15v/Application.php';
-@include_once (ABSPATH .  '/wp-admin/includes/bookmark.php');
-	
-new wv15v_Application ( __FILE__,array('DLinkSyncData','fv15v_Delicious','bv15v_Http') );
+ */
+require_once dirname ( __FILE__ ) . '/library/wordpress/wv15v/application.php';
+@include_once (ABSPATH . '/wp-admin/includes/bookmark.php');
+
+new wv15v_application ( __FILE__, array ('slinksyncdata', 'av15v_delicious', 'bv15v_http' ) );
