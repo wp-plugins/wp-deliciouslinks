@@ -13,7 +13,7 @@
 		<slug>deliciouspost</slug>
 		<stable_tag>4.0.3</stable_tag>
 		<uri>http://wordpress.org/extend/plugins/wp-deliciouslinks/</uri>
-		<preload>DLinkSyncData</preload>
+		<preload>dlinksyncdata</preload>
 		<preload>av15v_Delicious</preload>
 		<preload>bv15v_Http</preload>
 		<include>ABSPATH . '/wp-admin/includes/bookmark.php'</include>
