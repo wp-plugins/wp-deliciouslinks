@@ -1,11 +1,13 @@
 === DeliciousLinkSync ===
 Contributors: dcoda
 Donate link: http://wordpress.dcoda.co.uk/donate/deliciouslinksync/
-Tags: central, del.icio.us, delicious, link, links, php5.2, sync, synchronize
+		
+Tags: php5.2, sync, synchronize
 Requires at least: 3.0.0
 Tested up to: 3.1
 Stable tag: 4.0.3
-Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.
+Easily synchronize the links list on your blog or multiple
+			blogs with the links in your delicious account.
 == Description ==
 
 This plugin is only supported on PHP 5.2 or greater.

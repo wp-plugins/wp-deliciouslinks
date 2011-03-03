@@ -1,5 +1,5 @@
 <?php /*
-Plugin Name: &raquo;&raquo;&raquo;&nbsp;DeliciousLinkSync&nbsp;&alpha;&nbsp;&laquo;&laquo;&laquo;
+Plugin Name: &raquo;&raquo;&raquo;&nbsp;DeliciousLinkSync&nbsp;&alpha;
 Plugin URI: http://wordpress.org/extend/plugins/wp-deliciouslinks/
 Description: Easily synchronize the links list on your blog or multiple
 			blogs with the links in your delicious account.
