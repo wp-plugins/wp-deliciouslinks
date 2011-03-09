@@ -1,5 +1,5 @@
 <?php
-class dlinksyncdata extends wv15v_table_options {
+class dlinksyncdata extends wv23v_table_options {
 	public function defaults() {
 		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
 	}
@@ -22,7 +22,7 @@ class dlinksyncdata extends wv15v_table_options {
 		return $values;
 	}
 	public function synclinks($id, $password) {
-		$delObj = new av15v_Delicious ( );
+		$delObj = new av23v_Delicious ( );
 		$delObj->logonBasic ( $id, $password );
 		$links = $delObj->get_all_posts ( 'Sync' );
 		$newlinks = array ();

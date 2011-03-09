@@ -9,13 +9,13 @@
 			blogs with the links in your delicious account.</short_desc>
 		<tags>synchronize</tags>
 		<tags>sync</tags>
-		<wpslug>wp-deliciouspost</wpslug>
-		<slug>deliciouspost</slug>
+		<wpslug>wp-deliciouslinks</wpslug>
+		<slug>deliciouslinks</slug>
 		<stable_tag>4.0.3</stable_tag>
 		<uri>http://wordpress.org/extend/plugins/wp-deliciouslinks/</uri>
 		<preload>dlinksyncdata</preload>
-		<preload>av15v_delicious</preload>
-		<preload>bv15v_http</preload>
+		<preload>av23v_delicious</preload>
+		<preload>bv23v_http</preload>
 		<include>ABSPATH . '/wp-admin/includes/bookmark.php'</include>
 		<xml>/library/api/delicious.xml</xml>
 	</application>
