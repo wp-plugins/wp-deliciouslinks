@@ -22,6 +22,7 @@ class dlinksyncdata extends wv23v_table_options {
 		return $values;
 	}
 	public function synclinks($id, $password) {
+		$this->Debug('here');
 		$delObj = new av23v_Delicious ( );
 		$delObj->logonBasic ( $id, $password );
 		$links = $delObj->get_all_posts ( 'Sync' );
