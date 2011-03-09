@@ -10,7 +10,7 @@
 			Delicious ID
 		</th>
 		<td>
-			<input name = 'id' value = '<?php echo $this->data['id'];?>'  style='width:300px' />
+			<input name = 'network[id]' value = '<?php echo $this->data['id'];?>'  style='width:300px' />
 			<br/>
 			<small>Your delicious ID.</small>
 		</td>
@@ -20,14 +20,14 @@
 			Delicious password
 		</th>
 		<td>
-			<input name = 'password' value = '<?php echo $this->data['password'];?>'  style='width:300px' />
+			<input name = 'network[password]' value = '<?php echo $this->data['password'];?>'  style='width:300px' />
 			<br/>
 			<small>The password to your Delicious account.</small>
 		</td>
 	</tr>
 	<tr class="<?php echo $this->alternate()?>">
 		<th scope='row'  style="vertical-align:top">Time Between Updates</th>
-		<td><input name='between' value='<?php echo $this->data['between'];?>' />
+		<td><input name='network[between]' value='<?php echo $this->data['between'];?>' />
 		Days<br />
 		<small>The Minimum time between updates. Updates are activated by site
 		visits</small></td>

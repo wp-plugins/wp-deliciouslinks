@@ -5,11 +5,10 @@ class settingsdeliciouslinksynccontroller extends wv23v_controller_action_adminm
 		return $return;
 	}
 	public function settingsAction($content) {
-		$dataObj = new dlinksyncdata ( );
-		$this->view->data = $dataObj->post ();
-		if ($_SERVER ['REQUEST_METHOD'] == 'POST' && $this->view->data ['id'] != '') {
-			$dataObj->synclinks ( $this->view->data ['id'], $this->view->data ['password'] );
-		}
+		$this->view->data = $this->settings()->post ('network');
+//		if ($_SERVER ['REQUEST_METHOD'] == 'POST' && $this->view->data ['id'] != '') {
+//			$dataObj->synclinks ( $this->view->data ['id'], $this->view->data ['password'] );
+//		}
 		return $content . $this->updated ();
 	}
 }

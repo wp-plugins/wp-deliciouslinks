@@ -1,28 +1,29 @@
 <?php
-class dlinksyncdata extends wv23v_table_options {
-	public function defaults() {
-		return array ('id' => '', 'password' => '', 'between' => '', 'last_updated' => '' );
+class dlinksyncsettings extends wv23v_settings {
+	public function __construct($application)
+	{
+		parent::__construct($application);
+		$this->legacy_move('delicious_linksync','network');
+		$this->legacy_move('DLinkSync','network');
 	}
-	public function __construct() {
-		parent::__construct ();
-		$this->set_key ( array ('delicious_linksync' ) );
-		if (is_array ( get_option ( 'DLinkSync' ) )) {
-			
-			$this->set ( get_option ( 'DLinkSync' ) );
-			delete_option ( 'DLinkSync' );
-		}
+	public function prepare_data($data) {
+		$data=parent::prepare_data($data);
+		$data['network'] ['last_updated'] = time ();
+		return $data;
 	}
 	public function update() {
-		$values = $this->get ();
-		if ($values ['between'] != '' && (time () - $values ['last_updated']) / (60 * 60 * 24) >= $values ['between']) //if ($values['between'] !='' && (time()-$values['last_updated'])/(1)>=$values['between'])
-{
-			$this->synclinks ( $values ['id'], $values ['password'] );
-			$values = $this->set ( $values );
+		$data = $this->all();
+		if(!empty($data['network']['last_updated']) && !empty($data['network']['id']) && !empty($data['network']['password']))
+		{
+			if ((time () - $data ['network']['last_updated']) / (60 * 60 * 24) >= $data ['network']['between']) {
+				$this->synclinks ( $data ['network']['id'],$data['network']['password'] );
+				$data = $this->set ( $data,'network' );
+			}
 		}
-		return $values;
 	}
-	public function synclinks($id, $password) {
-		$this->Debug('here');
+	
+
+ 	public function synclinks($id, $password) {
 		$delObj = new av23v_Delicious ( );
 		$delObj->logonBasic ( $id, $password );
 		$links = $delObj->get_all_posts ( 'Sync' );
@@ -87,9 +88,4 @@ class dlinksyncdata extends wv23v_table_options {
 			}
 		}
 	}
-	public function prepare_value($values) {
-		$values ['last_updated'] = time ();
-		return $values;
-	}
-
 }

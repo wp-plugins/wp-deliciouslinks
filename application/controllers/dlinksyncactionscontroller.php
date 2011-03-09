@@ -1,10 +1,7 @@
 <?php
 class dlinksyncactionscontroller extends wv23v_controller_action_action {
-	public function shutdownAction() {
-		$dataObj = new dLinksyncdata ( );
-		$data = $dataObj->get ();
-		if ($data ['id'] != '') {
-			$dataObj->update ();
-		}
+	public function shutdownAction ()
+	{
+		$this->settings()->update();
 	}
 }
