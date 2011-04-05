@@ -1,5 +1,5 @@
 <?php
-class linksyncsettings extends wv23v_settings {
+class linksyncsettings extends wv25v_settings {
 	public function __construct($application)
 	{
 		parent::__construct($application);
@@ -18,7 +18,7 @@ class linksyncsettings extends wv23v_settings {
 		return $data;
 	}
 	public function get_links($blogroll) {
-		$f = new av23v_opml ( $blogroll );
+		$f = new av25v_opml ( $blogroll );
 		$OPML = $f->get ();
 		$fixed = array ();
 		foreach ( $OPML as $okey => $o ) {

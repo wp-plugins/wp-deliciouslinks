@@ -1,5 +1,5 @@
 <?php
-class settingslinksynccontroller extends wv23v_controller_action_adminmenu
+class settingslinksynccontroller extends wv25v_controller_action_adminmenu
 {
 
 	public function settingsAction ( $content )

@@ -1,5 +1,5 @@
 <?php
-class settingsdeliciouslinksynccontroller extends wv23v_controller_action_adminmenu {
+class settingsdeliciouslinksynccontroller extends wv25v_controller_action_adminmenu {
 	public function settingsActionMeta($return) {
 		$return ['title'] = 'Settings';
 		return $return;

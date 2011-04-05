@@ -10,4 +10,4 @@ Version: 4.1.0&alpha;
 require_once  dirname ( __FILE__ ) . '/library/wordpress/application.php';
 @include_once (ABSPATH . '/wp-admin/includes/bookmark.php');
 	
-new wv23v_application ( __FILE__,array('av23v_delicious','bv23v_http'),'dlinksyncsettings' );
+new wv25v_application ( __FILE__,array('av25v_delicious','bv25v_http'),'dlinksyncsettings' );

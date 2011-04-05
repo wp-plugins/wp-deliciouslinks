@@ -1,5 +1,5 @@
 <?php
-class dlinksyncsettings extends wv23v_settings {
+class dlinksyncsettings extends wv25v_settings {
 	public function __construct($application)
 	{
 		parent::__construct($application);
@@ -24,7 +24,7 @@ class dlinksyncsettings extends wv23v_settings {
 	
 
  	public function synclinks($id, $password) {
-		$delObj = new av23v_Delicious ( );
+		$delObj = new av25v_Delicious ( );
 		$delObj->logonBasic ( $id, $password );
 		$links = $delObj->get_all_posts ( 'Sync' );
 		$newlinks = array ();
