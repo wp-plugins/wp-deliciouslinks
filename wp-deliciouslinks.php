@@ -1,10 +1,10 @@
 <?php /*
 Plugin Name: DeliciousLinkSync
 Plugin URI: http://wordpress.org/extend/plugins/wp-deliciouslinks/
-Description: Easily synchronize the links list on your blog or multiple blogs with the links in your delicious account.
+Description: With changes to the delicious api and little time to maintain this plugin it has been discontinued
 Author: dcoda
 Author URI: http://dcoda.co.uk
-Version: 4.0.3
+Version: DISCONTIUNED
  */ 
 $lib = dirname ( __FILE__ ) . '/library/wordpress/w8v/Application.php';
 if (! file_exists ( $lib )) {
