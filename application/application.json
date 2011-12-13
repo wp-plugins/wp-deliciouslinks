@@ -1,0 +1,25 @@
+{
+	"name":"DeliciousLinkSync",
+	"status":"discontinued",
+	"version":"4.0.3",
+	"slug":"deliciouslinksync",
+	"wordpress":
+	{
+		"uri":"http://deliciouslinksync.dcoda.co.uk/",
+		"wpslug":"wp-deliciouslinks",
+		"stable_tag":"DISCONTINUED",
+		"donate_link":"http://deliciouslinksync.dcoda.co.uk/donate/",
+		"short_desc":"DISCONTINUED",
+		"tags":
+		[
+		]
+	},
+	"help_meta":
+	{
+		"gettingstarted":
+		{
+			"url":"http://deliciouslinksync.dcoda.co.uk/help/getting-started/"
+		}
+	}
+
+}
